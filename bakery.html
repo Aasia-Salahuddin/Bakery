@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Local Bakery</title>
+    <link rel="stylesheet" href="bakery.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="background">
+<div>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <!--    logo-->
+                <div class="logo">
+                    <a class="navbar-brand">
+                        <img src="bakerylogo.jpg" width="200" width="200" alt="Bakery Logo">    
+                    </a>
+                </div>
+            <!--    Menu Items | Navbar-->
+                <div class="form-inline me-2">
+                    <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                </div>
+            </nav>
+    </header>
+
+    <section>
+        <!-- Hero Section-->
+    <section id="home" class="hero-section">
+        <div class="hero">
+            <div class="container">
+                <h1 >Welcome to Evan's Bake Shop</h1>
+                <div class="col md-6  col sm-12">
+                <!-- md for medium, sm for small-->
+                <img src="freshlybakeditems.avif" width="500" height="500" alt="freshlybakeditems">
+            </div>
+            <div class="col md-6  col sm-12">
+                <p>
+                    <span class="message"> Dear valued customers,<br>
+                    Get ready to be swept up in a melody of flavors as you explore the exquisite 
+                    selection of handcrafted delights at <span class="shop_name"><b>"Evan's Bake Shop"</b></span>. 
+                    We are absolutely thrilled to have you walk through our bakery doors. 
+                    At <span class="shop_name"><b>"Evan's Bake Shop"</b></span>, we believe that life is sweeter when shared,
+                    and we're here to create sweet moments that you'll treasure. Dive into a symphony 
+                    of tastes as you discover our collection of artisanal treasures. 
+                    Each bite promises to be a captivating experience in itself, tailored to suit every 
+                    palate.
+                </span>
+                </p> 
+            </div>
+            </div>
+            </div>
+    </div>   
+    </section>
+
+                  <!-- Menu Section-->
+    <section id="menu" class="menu-section">
+        <h2>Bakery Menu</h2>
+            <div class="row">
+                <div class="col-md-12 col-lg-6 col-sm-12">
+                    <img src="CinnamonSwirlBread.jpg" height="200" width="200" alt="CinnamonSwirlBread">
+                    <h5>Cinnamon Swirl Bread</h5>
+                    <h6>Rs. 200/-</h6>
+                    <button class="btn show-more-btn bg-dark text-white btn-lg">Buy Now</button>
+                </div>
+
+            <div class="col-md-12 col-lg-6 col-sm-12">
+                <img src="chococake.jpg"  height="200" width="200" alt="chocolate cake">
+                <h5>Chocolate Cake</h5>
+                <h6>Rs. 1000/-</h6>
+                <button class="btn show-more-btn bg-dark text-white btn-lg">Buy Now</button>
+            </div>
+    
+            <div class="col-md-12 col-lg-6 col-sm-12">
+                <img src="redcake.jpg"   width="200" height="200"alt="Red velvet cake">
+                <h5>Red velvet cake</h5>
+                <h6>Rs. 1000/-</h6>
+                <button class="btn show-more-btn bg-dark text-white btn-lg">Buy Now</button>
+            </div>
+
+            <div class="col-md-12 col-lg-6 col-sm-12">
+                <img src="frenchpesteries.jpg"  height="200" width="200" alt="French Pesteries">
+                <h5>French Pesteries</h5>
+                <h6>Rs. 500/-</h6>
+                <button class="btn show-more-btn bg-dark text-white btn-lg">Buy Now</button>
+            </div>
+
+            <div class="col-md-12 col-lg-6 col-sm-12">
+                    <img src="buttercokkie.jpg"  height="200" width="200" alt="Butter Cookkies">
+                    <h5>Butter Cookkies</h5>
+                    <h6>Rs. 600/-</h6>
+                    <button class="btn show-more-btn bg-dark text-white btn-lg">Buy Now</button>
+                </div>
+
+                <div class="col-md-12 col-lg-6 col-sm-12">
+                    <img src="chocommuffin.webp"  height="200" width="200" alt="choco muffin">
+                    <h5>Choco Muffins</h5>
+                    <h6>Rs. 600/-</h6>
+                    <button class="btn show-more-btn bg-dark text-white btn-lg">Buy Now</button>
+                </div>
+
+            </div>
+        <!-- Repeat the product structure for other products -->
+               
+              <!--About Section-->
+    </section>
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <div class="container">
+        <div class="col md-6  col sm-12">
+            <p>
+                <span class="history">Evan's bake shop, founded in 1960, is a cherished family-owned bakery known for its 
+                unwavering commitment to quality, warm family-centered service, and a blend of 
+                tradition and innovation. We prioritize community engagement, sustainability, 
+                and customer satisfaction, all while offering freshly baked, authentic treats that 
+                bring joy to our extended family of customers.</span>
+            </p>
+        </div>
+        <img src="bakery-owner.jpg" alt="Bakery Owner">
+        </div>
+    </section>
+               <!--Contact Section-->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div>
+       
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+              <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+               <br>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary">Send</button>
+
+                <!--Contact-->
+        <div class="contact-info">
+            <b><p>Address: 1613 White Way. Atlanta, GA 30344</p></b>
+            <b> <p>Phone: +1 4528461011</p></b>
+            <b> <p>Email: Evan's@gmail.com</p></b>
+        </div>
+    </div>
+    </section>
+            <!--Footer Section-->
+    <footer class="footer-section">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/explore/locations/121698249/evans-bakery/">
+                <img src="Instagram_icon.png.webp" height="50" width="50" alt="instagram"></a>
+            <a href="https://www.facebook.com/lucasalfonza/"><img src="f.png"
+                height="50" width="50" alt="facebook"></a>
+        </div>
+        <p>&copy; 2023 Evan's Bake Shop. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
